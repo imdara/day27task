@@ -3,15 +3,22 @@ body{
     background: #f8f8f8;
 }
 
-/* .form-control {
-    width:70vw;
-    margin-right: 5px;
-    display: inline; 
-} */
+.form-control.add-task {
+    width: 95%;
+    display: inline;
+}
 
-button.btn-primary {
+#addBtn {
     font-weight: bold;
-    visibility: hidden;
+    margin-left: 1%;
+    margin-bottom: 5px;
+}
+
+#delBtn {
+    font-weight: bold;
+    float: right;
+    width: 32px;
+    height: 32px;
 }
 
 .todo-nav {
@@ -109,4 +116,10 @@ div.button, div.checker, div.radio, div.selector, div.uploader {
     background: #fff;
     border-radius: calc(.15rem - 1px);
     box-shadow: 0 1px 15px rgba(0,0,0,0.04), 0 1px 6px rgba(0,0,0,0.04);
+}
+
+@media (max-width: 480px) {
+    #addBtn {
+        visibility: hidden;
+    }
 }
